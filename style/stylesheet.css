@@ -3,21 +3,51 @@ html {
 	height: 100%;
 	}
 	
-body {
+#content {
 	font-family: "Palatino Linotype", "Palatino", "Book Antiqua", serif;
 	margin: 100px auto;
 	width: 350px;
-	max-width: 350px;
-}
+	background-image: linear-gradient(right top, rgb(209,209,209) 3%, rgb(184,184,184) 84%);
+	background-image: -o-linear-gradient(right top, rgb(209,209,209) 3%, rgb(184,184,184) 84%);
+	background-image: -moz-linear-gradient(right top, rgb(209,209,209) 3%, rgb(184,184,184) 84%);
+	background-image: -webkit-linear-gradient(right top, rgb(209,209,209) 3%, rgb(184,184,184) 84%);
+	background-image: -ms-linear-gradient(right top, rgb(209,209,209) 3%, rgb(184,184,184) 84%);
 
-#body {
-	background: #d1d1d1;
-	-moz-border-radius: 0 0 0 10px;
-	-webkit-border-radius: 10px;
+	background-image: -webkit-gradient(
+		linear,
+		right top,
+		left bottom,
+		color-stop(0.03, rgb(209,209,209)),
+		color-stop(0.84, rgb(184,184,184))
+	);
+
+	-o-border-radius: 5px 50px 5px 50px;
+	-moz-border-radius: 5px 50px 5px 50px;
+	-webkit-border-radius: 5px 50px 5px 50px;
 	border-radius: 5px 50px 5px 50px;
+
+	-o-box-shadow: 0 0 2px black;
 	-moz-box-shadow: 0 0 2px black;
 	-webkit-box-shadow: 0 0 2px black;
 	box-shadow: 0 0 2px black;
+	
+	-o-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#content:focus,
+#content:hover {
+	padding: 50px 75px;
+	width: 600px;
+	font-size: 1.5em;
+}
+
+#title,
+#about,
+#links {
+	margin: 0 auto;
 }
 
 h1 {
@@ -28,6 +58,15 @@ h1 {
 	margin: 0;
 	padding: 0;
 	text-shadow: #0f0f0f -2px -1px 0;
+	
+	-o-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#title h1:hover {
+	color: #d1dddf;
 }
 
 h3 {
@@ -62,6 +101,17 @@ p:first-letter{ font-weight: bold; color: #1a1a1a;}
 	font-size: 2em;
 	text-decoration: none;
 	text-shadow: #0f0f0f -1px -1px 0;
+
+	-o-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	}
+
+#links li a:focus,
+#links li a:hover {
+	color: #d1dddf;
+	font-size: 3.5em;
+}
 
 #about p { padding: 0 0 0 0; margin: 0 0 0 0; }
